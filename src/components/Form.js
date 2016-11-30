@@ -3,6 +3,7 @@ import React from 'react'
 import '../style/Form.css'
 
 import Input from './Input'
+import Loading from './Loading'
 
 function validateEmail(value) {
   return /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(value)
@@ -98,11 +99,9 @@ export default class Form extends React.Component {
             onChange={e => this.handleFieldChange('mail', e.target.value)}
           />
         </div>
-        <input
-          type="submit"
-          value={this.props.isFetching ? "Loading..." : "Subscribe"}
-          disabled={this.props.isFetching}
-        />
+        <button type="submit" disabled={this.props.isFetching}>
+          {this.props.isFetching ? <Loading /> : "Subscribe"}
+        </button>
         {this.props.error && <p className="form-error">{this.props.message}</p>}
       </form>
     )

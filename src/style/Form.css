@@ -46,7 +46,7 @@
   outline: none;
 }
 
-.newsletter-meetup input[type="submit"]{
+.newsletter-meetup button[type="submit"]{
   vertical-align: top;
   height: 102px;
   width: 102px;
@@ -62,11 +62,11 @@
   background: linear-gradient(45deg, #FF6C54, #FFA754);
 }
 
-.newsletter-meetup input[type="submit"]:hover{
+.newsletter-meetup button[type="submit"]:hover{
   background: linear-gradient(180deg, #FF6C54, #FFA754);
 }
 
-.newsletter-meetup input[type="submit"]:disabled {
+.newsletter-meetup button[type="submit"]:disabled {
   cursor: not-allowed;
 }
 
