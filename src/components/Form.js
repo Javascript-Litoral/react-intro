@@ -43,8 +43,14 @@ export default class Form extends React.Component {
     e.preventDefault()
     this.setState({isPristine: false})
     if (this.isValid()) {
-      this.props.submit()
-      this.restore()
+      const body = {
+        mail: this.state.fields.mail.value,
+        name: this.state.fields.name.value
+      }
+      this.props.submit(body)
+        .then(() => {
+          this.restore()
+        })
     }
   }
 
@@ -53,8 +59,8 @@ export default class Form extends React.Component {
       isPristine: true,
       fields: {
         mail: {
-          value: false,
-          isValid: '',
+          value: '',
+          isValid: false,
           validator: validateEmail
         },
         name: {
@@ -92,7 +98,12 @@ export default class Form extends React.Component {
             onChange={e => this.handleFieldChange('mail', e.target.value)}
           />
         </div>
-        <input type="submit" value="Subscribe" />
+        <input
+          type="submit"
+          value={this.props.isFetching ? "Loading..." : "Subscribe"}
+          disabled={this.props.isFetching}
+        />
+        {this.props.error && <p className="form-error">{this.props.message}</p>}
       </form>
     )
   }

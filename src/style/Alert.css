@@ -28,3 +28,7 @@
 .alert-dismiss {
   cursor: pointer;
 }
+
+.alert-dismiss:hover {
+  color: #ddd;
+}
