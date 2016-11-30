@@ -13,7 +13,7 @@ export const notes = {
   dataFlow: 'mucho más ordenado, pero se vuelve verboso',
   vdom: 'renderizado rápido, de nuevo no es el único',
   jsx: 'separation of concerns? f*ck it! enhance JS FTW! (mostrar link)',
-  propsState: '',
+  propsState: 'explicar funcional vs class, listar hooks, mostrar en demo',
   demo: 'repazar conceptos, explicar componentes',
   questions: '???',
   thanks: 'la proxima hacemos una app!!! \\o/'

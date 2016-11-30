@@ -1,1 +1,7 @@
-localhost:8080
+localhost:8996
+
+git https://github.com/gillchristian/react-intro.git . {
+  hook /_deploy
+  branch gh-pages
+}
+

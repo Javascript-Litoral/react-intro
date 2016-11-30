@@ -50,7 +50,6 @@ import createTheme from "spectacle/lib/themes/default";
 // Require CSS
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
-require("../style.css");
 
 const images = {
   reactLogo: require("../assets/logo.svg"),
@@ -62,10 +61,10 @@ const images = {
 };
 
 const logos = [
-  images.logoRedux,
-  images.logoFlux,
-  images.logoRelay,
-  images.logoImmutable
+  images.logoRedux.replace("/", ""),
+  images.logoFlux.replace("/", ""),
+  images.logoRelay.replace("/", ""),
+  images.logoImmutable.replace("/", "")
 ]
 
 preloader(images);
@@ -122,7 +121,7 @@ export default class Presentation extends React.Component {
             <Questions />
           </Slide>
           <Slide bgColor="secondary" notes={titlelize(notes.thanks)}>
-            <Thanks image={images.thanks} />
+            <Thanks image={images.thanks.replace("/", "")} />
           </Slide>
         </Deck>
       </Spectacle>
