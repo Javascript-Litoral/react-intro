@@ -1,0 +1,30 @@
+.alert {
+  vertical-align: top;
+  height: 51px;
+  width: 428px;
+  margin: 0;
+  padding: 20px;
+  border: 0;
+  border-radius: 3px;
+  background: pink;
+  font-weight: 700;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  color: #fff;
+  background: linear-gradient(45deg, #FF6C54, #FFA754);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.alert:hover{
+  background: linear-gradient(180deg, #FF6C54, #FFA754);
+}
+
+.alert-content {
+  width: 90%;
+}
+
+.alert-dismiss {
+  cursor: pointer;
+}
