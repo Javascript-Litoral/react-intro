@@ -49,28 +49,7 @@ export default class Form extends React.Component {
         name: this.state.fields.name.value
       }
       this.props.submit(body)
-        .then(() => {
-          this.restore()
-        })
     }
-  }
-
-  restore() {
-    this.setState({
-      isPristine: true,
-      fields: {
-        mail: {
-          value: '',
-          isValid: false,
-          validator: validateEmail
-        },
-        name: {
-          value: '',
-          isValid: false,
-          validator: (name) => !!name && true
-        }
-      }
-    })
   }
 
   isValid() {
