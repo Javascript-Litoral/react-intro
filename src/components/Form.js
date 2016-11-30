@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './Form.css'
+import '../style/Form.css'
 
 import Input from './Input'
 

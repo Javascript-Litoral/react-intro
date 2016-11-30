@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './Alert.css'
+import '../style/Alert.css'
 
 export default function Alert({dismiss, children}) {
   return (
