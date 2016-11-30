@@ -90,11 +90,11 @@ export default class Presentation extends React.Component {
           <Slide bgColor="secondary" >
             <Roadmap />
           </Slide>
-          <Slide bgColor="secondary" notes={titlelize(notes.concepts)}>
-            <Concepts />
-          </Slide>
           <Slide bgColor="secondary" notes={titlelize(notes.ecosystem)}>
             <Ecosystem images={logos} />
+          </Slide>
+          <Slide bgColor="secondary" notes={titlelize(notes.concepts)}>
+            <Concepts />
           </Slide>
           <Slide bgColor="#babfc6" notes={titlelize(notes.declarative)}>
             <Declarative />
