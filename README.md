@@ -2,7 +2,7 @@
 
 > Introducción a React, Miércoles 30 de noviembre, 2016
 
-- [Demo app](https://gillchristian.github.io/react-intro).
+- [Demo app](https://javascript-litoral.github.io/react-intro).
 - [Slides](https://gillchristian.xyz/react-intro). 
 
 ---
