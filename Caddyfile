@@ -1,6 +1,6 @@
 localhost:8996
 
-git https://github.com/gillchristian/react-intro.git . {
+git https://github.com/javascript-litoral/react-intro.git . {
   hook /_deploy
   branch gh-pages
 }
